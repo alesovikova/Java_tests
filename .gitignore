@@ -1,8 +1,7 @@
 .gradle
-/build
-*.html
-*.bin
-*.idx
+/build/
+**/build/
+
 /.idea
 *.iml
 local.properties
