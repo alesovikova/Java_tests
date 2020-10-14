@@ -4,8 +4,6 @@ build/
 *.iml
 local.properties
 .DS_Store 
-/build/**/index.html
-\build\**\index.html
 
 # Ignore Gradle GUI config
 gradle-app.setting
