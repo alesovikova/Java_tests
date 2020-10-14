@@ -1,9 +1,10 @@
 .gradle
-build/
+/.build
 /.idea
 *.iml
 local.properties
 .DS_Store 
+*.html
 
 # Generated files
 bin/
