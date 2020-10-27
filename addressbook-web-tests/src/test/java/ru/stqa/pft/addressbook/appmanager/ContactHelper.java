@@ -40,4 +40,19 @@ public class ContactHelper extends HelperBase {
     public void initNewContact() {
         click(By.linkText("ADD_NEW"));
     }
+
+    public boolean isThereAContact() {
+        return isElementPresent(By.cssSelector("img[alt='EDIT']"));
+    }
+
+    public void createContact(ContactData contact) {
+        initNewContact();
+        fillContactForm(contact, true);
+        submitContactCreation();
+        returntoHomePage();
+    }
+
+    private void returntoHomePage() {
+        click(By.linkText("HOME"));
+    }
 }
