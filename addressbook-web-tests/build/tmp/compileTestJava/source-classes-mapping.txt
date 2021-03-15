@@ -1,28 +1,60 @@
-ru/stqa/pft/addressbook/appmanager/NavigationHelper.java
- ru.stqa.pft.addressbook.appmanager.NavigationHelper
-ru/stqa/pft/addressbook/appmanager/SessionHelper.java
- ru.stqa.pft.addressbook.appmanager.SessionHelper
-ru/stqa/pft/addressbook/appmanager/HelperBase.java
- ru.stqa.pft.addressbook.appmanager.HelperBase
-ru/stqa/pft/addressbook/model/ContactData.java
- ru.stqa.pft.addressbook.model.ContactData
+ru/stqa/pft/art_team/tests/TestBase.java
+ ru.stqa.pft.art_team.tests.TestBase
 ru/stqa/pft/addressbook/appmanager/ContactHelper.java
  ru.stqa.pft.addressbook.appmanager.ContactHelper
-ru/stqa/pft/addressbook/appmanager/GroupHelper.java
- ru.stqa.pft.addressbook.appmanager.GroupHelper
-ru/stqa/pft/addressbook/tests/ContactModificationTest.java
- ru.stqa.pft.addressbook.tests.ContactModificationTest
-ru/stqa/pft/addressbook/tests/TestBase.java
- ru.stqa.pft.addressbook.tests.TestBase
-ru/stqa/pft/addressbook/model/GroupData.java
- ru.stqa.pft.addressbook.model.GroupData
-ru/stqa/pft/addressbook/tests/GroupModificationTests.java
- ru.stqa.pft.addressbook.tests.GroupModificationTests
+ru/stqa/pft/addressbook/appmanager/HelperBase.java
+ ru.stqa.pft.addressbook.appmanager.HelperBase
+ru/stqa/pft/art_team/tests/TestLogin.java
+ ru.stqa.pft.art_team.tests.TestLogin
 ru/stqa/pft/addressbook/tests/GroupDeletionTests.java
  ru.stqa.pft.addressbook.tests.GroupDeletionTests
+ru/stqa/pft/addressbook/appmanager/NavigationHelper.java
+ ru.stqa.pft.addressbook.appmanager.NavigationHelper
+ru/stqa/pft/art_team/appmanager/BaseHelper.java
+ ru.stqa.pft.art_team.appmanager.BaseHelper
+ru/stqa/pft/art_team/appmanager/ApplicationManager.java
+ ru.stqa.pft.art_team.appmanager.ApplicationManager
+ru/stqa/pft/art_team/appmanager/CV_page.java
+ ru.stqa.pft.art_team.appmanager.CV_page
+ru/stqa/pft/addressbook/model/GroupData.java
+ ru.stqa.pft.addressbook.model.GroupData
 ru/stqa/pft/addressbook/appmanager/ApplicationManager.java
  ru.stqa.pft.addressbook.appmanager.ApplicationManager
-ru/stqa/pft/addressbook/tests/ContactCreationTests.java
- ru.stqa.pft.addressbook.tests.ContactCreationTests
+ru/stqa/pft/addressbook/model/ContactData.java
+ ru.stqa.pft.addressbook.model.ContactData
 ru/stqa/pft/addressbook/tests/GroupCreationTests.java
  ru.stqa.pft.addressbook.tests.GroupCreationTests
+ru/stqa/pft/addressbook/tests/ContactCreationTests.java
+ ru.stqa.pft.addressbook.tests.ContactCreationTests
+ru/stqa/pft/addressbook/appmanager/GroupHelper.java
+ ru.stqa.pft.addressbook.appmanager.GroupHelper
+ru/stqa/pft/addressbook/appmanager/SessionHelper.java
+ ru.stqa.pft.addressbook.appmanager.SessionHelper
+ru/stqa/pft/art_team/appmanager/SessionHelper.java
+ ru.stqa.pft.art_team.appmanager.SessionHelper
+ru/stqa/pft/addressbook/tests/ContactModificationTest.java
+ ru.stqa.pft.addressbook.tests.ContactModificationTest
+ru/stqa/pft/send_file/appmanager/BaseHelper.java
+ ru.stqa.pft.send_file.appmanager.BaseHelper
+ru/stqa/pft/addressbook/tests/TestBase.java
+ ru.stqa.pft.addressbook.tests.TestBase
+ru/stqa/pft/art_team/locators/Keycloak_locators.java
+ ru.stqa.pft.art_team.locators.Keycloak_locators
+ru/stqa/pft/addressbook/tests/GroupModificationTests.java
+ ru.stqa.pft.addressbook.tests.GroupModificationTests
+ru/stqa/pft/art_team/tests/TestMyCV.java
+ ru.stqa.pft.art_team.tests.TestMyCV
+ru/stqa/pft/send_file/appmanager/SessionHelper.java
+ ru.stqa.pft.send_file.appmanager.SessionHelper
+ru/stqa/pft/send_file/locators/Locators.java
+ ru.stqa.pft.send_file.locators.Locators
+ru/stqa/pft/send_file/tests/TestBase.java
+ ru.stqa.pft.send_file.tests.TestBase
+ru/stqa/pft/send_file/tests/TestFiles.java
+ ru.stqa.pft.send_file.tests.TestFiles
+ru/stqa/pft/send_file/appmanager/SendFile_page.java
+ ru.stqa.pft.send_file.appmanager.SendFile_page
+ru/stqa/pft/send_file/appmanager/ApplicationManager.java
+ ru.stqa.pft.send_file.appmanager.ApplicationManager
+ru/stqa/pft/send_file/tests/TestLogin.java
+ ru.stqa.pft.send_file.tests.TestLogin

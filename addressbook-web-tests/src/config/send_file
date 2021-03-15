@@ -1,0 +1,11 @@
+{
+
+  "username": "admin",
+  "password": "admin",
+  "false_username": "admin1",
+  "false_password": "1admin",
+
+  "main_url": "https://sendfiledemo.artezio.net/"
+
+
+}
