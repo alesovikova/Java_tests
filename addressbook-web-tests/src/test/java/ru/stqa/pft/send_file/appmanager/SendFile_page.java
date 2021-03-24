@@ -166,4 +166,25 @@ public class SendFile_page {
     public void validate_file_unavailable_to_download() {
         Assert.assertEquals(false, baseHelper.isElementPresent(wd, Locators.link_to_file_for_download));
     }
+
+    public void go_to_send_by_email_tab() {
+        wd.findElement(Locators.send_by_email_tab).click();
+    }
+
+    public void fill_in_send_by_email_form(String email, String subject, String message) {
+        wd.findElement(Locators.field_email).clear();
+        wd.findElement(Locators.field_email).sendKeys(email);
+        wd.findElement(Locators.field_subject).clear();
+        wd.findElement(Locators.field_subject).sendKeys(subject);
+        wd.findElement(Locators.field_message).clear();
+        wd.findElement(Locators.field_message).sendKeys(message);
+    }
+
+    public void click_send_button() {
+        wd.findElement(Locators.send_button).click();
+    }
+
+    public void validate_success_message_send_by_email() {
+        Assert.assertEquals(true, baseHelper.isElementPresent(wd, Locators.success_message_send_by_email));
+    }
 }

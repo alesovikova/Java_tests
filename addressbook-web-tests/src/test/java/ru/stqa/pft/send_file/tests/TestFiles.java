@@ -1,9 +1,10 @@
 package ru.stqa.pft.send_file.tests;
 
 import org.junit.Before;
-import org.junit.Test;
+//import org.junit.Test;
 import java.io.File;
 import java.util.ArrayList;
+import org.testng.annotations.Test;
 
 public class TestFiles extends TestBase {
 
@@ -193,4 +194,20 @@ public class TestFiles extends TestBase {
 
     }
 
+    @Test
+    public void test_download_file_and_send_by_email() {
+        String file_name = "file_1.txt";
+        File file = new File("src/data/" + file_name);
+
+        app.sendFile_page.download_file(file.getAbsolutePath());
+        app.sendFile_page.go_to_send_by_email_tab();
+        app.sendFile_page.go_to_send_by_email_tab();
+        app.sendFile_page.fill_in_send_by_email_form("Anna.Lesovikova@artezio.com",
+                "Autotest", "Autotest test test");
+        app.sendFile_page.click_send_button();
+        app.sendFile_page.validate_success_message_send_by_email();
+
+    }
+
 }
+

@@ -39,7 +39,12 @@ public class Locators {
     }
     public static By check_box_password = (By.xpath("//input[@name='passwordEnabled']"));
     public static By password_field = (By.xpath("//input[@id='password']"));
-
+    public static By send_by_email_tab = (By.xpath("//div[@class='MuiTabs-flexContainer']/button[2]"));
+    public static By field_email = (By.xpath("//form//input[@id='tags-filled']"));
+    public static By field_subject = (By.xpath("//form//input[@name='subject']"));
+    public static By field_message = (By.xpath("//form//textarea[@name='text']"));
+    public static By send_button = (By.xpath("//button/span[text()='SEND']"));
+    public static By success_message_send_by_email = (By.xpath("//section/div/div/div[text()='Your files were sent to e-mail']"));
 
 
     //Page for download files
