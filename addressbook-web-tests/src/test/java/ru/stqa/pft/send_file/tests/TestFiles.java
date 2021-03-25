@@ -4,12 +4,14 @@ import org.junit.Before;
 //import org.junit.Test;
 import java.io.File;
 import java.util.ArrayList;
+
+import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
 public class TestFiles extends TestBase {
 
 
-    @Before
+    @BeforeTest
     public void go_to_sendFile_page() {
         app.getBaseHelper().go_to_url("https://sendfiledemo.artezio.net/sendFile");
     }

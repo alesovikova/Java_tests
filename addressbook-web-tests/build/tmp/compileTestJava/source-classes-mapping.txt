@@ -54,7 +54,7 @@ ru/stqa/pft/art_team/tests/TestLogin.java
  ru.stqa.pft.art_team.tests.TestLogin
 ru/stqa/pft/send_file/tests/TestBase.java
  ru.stqa.pft.send_file.tests.TestBase
-ru/stqa/pft/send_file/tests/TestFiles.java
- ru.stqa.pft.send_file.tests.TestFiles
 ru/stqa/pft/send_file/tests/TestLogin.java
  ru.stqa.pft.send_file.tests.TestLogin
+ru/stqa/pft/send_file/tests/TestFiles.java
+ ru.stqa.pft.send_file.tests.TestFiles
