@@ -5,13 +5,14 @@ import org.junit.Before;
 import java.io.File;
 import java.util.ArrayList;
 
+import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
 public class TestFiles extends TestBase {
 
 
-    @BeforeTest
+    @BeforeMethod
     public void go_to_sendFile_page() {
         app.getBaseHelper().go_to_url("https://sendfiledemo.artezio.net/sendFile");
     }
