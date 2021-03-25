@@ -125,7 +125,7 @@ public class SendFile_page {
 
     public void validate_text_term_expire() {
         String text_term_expire = wd.findElement(Locators.text_term_expire).getText();
-        Assert.assertEquals("The retention period will expire after 0 days 23 hours 59 minutes.", text_term_expire);
+        Assert.assertEquals("The retention period will expire after 2 days 23 hours 59 minutes.", text_term_expire);
 
     }
 
