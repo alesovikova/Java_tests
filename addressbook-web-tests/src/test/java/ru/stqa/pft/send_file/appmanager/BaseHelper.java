@@ -1,9 +1,9 @@
 package ru.stqa.pft.send_file.appmanager;
 
-import org.assertj.core.groups.Tuple;
 import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
 import org.openqa.selenium.*;
+import ru.stqa.pft.send_file.locators.Locators;
 
 import java.io.FileReader;
 import java.util.ArrayList;

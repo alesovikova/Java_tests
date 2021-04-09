@@ -55,4 +55,16 @@ public class Locators {
 
     //Page for download files with link
     public static By link_for_download_file = (By.xpath("//section//a"));
+
+
+    //Page Request link
+    public static By request_link_btn = (By.xpath("//form//button/span[text()='Request link']"));
+    public static By request_link = (By.xpath("//div[text()='The link «Request for a file» is generated']/following-sibling::div/a"));
+    public static By request_more_btn = (By.xpath("//button/span[text()='Request more']"));
+
+
+    //Page My files
+    public static By column_file_name = (By.xpath("//table/tbody/tr[1]/td[2]/div"));
+
+
 }

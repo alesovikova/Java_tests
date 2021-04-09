@@ -17,7 +17,9 @@ public class SessionHelper {
     }
 
     public void login(String username, String password) {
+        wd.findElement(Locators.username).clear();
         type(Locators.username, username);
+        wd.findElement(Locators.password).clear();
         type(Locators.password, password);
         click(Locators.login_btn);
         baseHelper.pause(5000);
@@ -35,7 +37,7 @@ public class SessionHelper {
 
     public void validate_login_invalid_message() {
         String message = wd.findElement(Locators.login_invalid_message).getText();
-        Assert.assertEquals(message, "Invalid username or password.");
+        Assert.assertEquals(message, "Incorrect e-mail or password");
 
     }
 

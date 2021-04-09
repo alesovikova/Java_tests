@@ -1,6 +1,7 @@
 package ru.stqa.pft.send_file.tests;
 
 import org.junit.Test;
+//import org.testng.annotations.Test;
 
 public class TestLogin extends TestBase {
 

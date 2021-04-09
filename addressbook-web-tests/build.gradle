@@ -4,6 +4,10 @@ repositories {
     mavenCentral()
 }
 
+configurations {
+    agent
+}
+
 dependencies {
     implementation("org.testng:testng:7.3.0")
     implementation("org.seleniumhq.selenium:selenium-java:4.0.0-alpha-6")
@@ -12,6 +16,13 @@ dependencies {
     implementation("com.googlecode.json-simple:json-simple:1.1.1")
     implementation("org.json:org.json:chargebee-1.0")
     implementation("org.assertj:assertj-swing-junit:3.17.1")
+    agent "org.aspectj:aspectjweaver:1.8.0"
+    implementation "ru.yandex.qatools.allure:allure-testng-adaptor:1.4.0.RC4"
+}
+
+
+test.doFirst {
+    jvmArgs "-javaagent:${configurations.agent.singleFile}"
 }
 
 test {

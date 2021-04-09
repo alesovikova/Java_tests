@@ -16,6 +16,8 @@ public class ApplicationManager {
     private SessionHelper sessionHelper;
     private BaseHelper baseHelper;
     public SendFile_page sendFile_page;
+    public RequestFile_page requestFile_page;
+    public MyFile_page myFile_page;
 
     private String browser;
     String users = "send_file";
@@ -41,6 +43,8 @@ public class ApplicationManager {
         sessionHelper = new SessionHelper(wd);
         baseHelper = new BaseHelper(wd);
         sendFile_page = new SendFile_page(wd);
+        requestFile_page = new RequestFile_page(wd);
+        myFile_page = new MyFile_page(wd);
 
         login_as_user();
 

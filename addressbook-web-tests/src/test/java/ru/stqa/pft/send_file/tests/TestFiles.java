@@ -204,7 +204,6 @@ public class TestFiles extends TestBase {
 
         app.sendFile_page.download_file(file.getAbsolutePath());
         app.sendFile_page.go_to_send_by_email_tab();
-        app.sendFile_page.go_to_send_by_email_tab();
         app.sendFile_page.fill_in_send_by_email_form("Anna.Lesovikova@artezio.com",
                 "Autotest", "Autotest test test");
         app.sendFile_page.click_send_button();
