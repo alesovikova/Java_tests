@@ -52,12 +52,12 @@ ru/stqa/pft/send_file/locators/Locators.java
  ru.stqa.pft.send_file.locators.Locators
 ru/stqa/pft/send_file/appmanager/SendFile_page.java
  ru.stqa.pft.send_file.appmanager.SendFile_page
+ru/stqa/pft/send_file/appmanager/MyFile_page.java
+ ru.stqa.pft.send_file.appmanager.MyFile_page
 ru/stqa/pft/send_file/tests/TestMyFiles.java
  ru.stqa.pft.send_file.tests.TestMyFiles
 ru/stqa/pft/send_file/tests/TestBase.java
  ru.stqa.pft.send_file.tests.TestBase
-ru/stqa/pft/send_file/appmanager/MyFile_page.java
- ru.stqa.pft.send_file.appmanager.MyFile_page
 ru/stqa/pft/send_file/tests/TestFiles.java
  ru.stqa.pft.send_file.tests.TestFiles
 ru/stqa/pft/send_file/appmanager/ApplicationManager.java
