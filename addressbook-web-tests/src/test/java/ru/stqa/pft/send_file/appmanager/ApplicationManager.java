@@ -28,7 +28,7 @@ public class ApplicationManager {
     }
 
     public void init() {
-        System.setProperty("webdriver.chrome.driver", "/var/lib/jenkins/workspace/Autotests-DEMO/addressbook-web-tests/src/test/drivers/chromedriver");
+        System.setProperty("webdriver.chrome.driver", "/var/lib/jenkins/workspace/Autotests-DEMO/addressbook-web-tests/src/test/drivers/chromedriver.exe");
         if (browser == BrowserType.CHROME) {
             wd = new ChromeDriver();
         } else if (browser == BrowserType.FIREFOX) {
