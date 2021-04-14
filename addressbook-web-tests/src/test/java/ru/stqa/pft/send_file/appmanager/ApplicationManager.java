@@ -31,7 +31,7 @@ public class ApplicationManager {
     public void init() {
         ChromeOptions chromeOptions= new ChromeOptions();
         chromeOptions.setBinary("/var/lib/jenkins/workspace/Autotests-DEMO/addressbook-web-tests/src/test/drivers/linux/chromedriver");
-        //System.setProperty("webdriver.chrome.driver", "/var/lib/jenkins/workspace/Autotests-DEMO/addressbook-web-tests/src/test/drivers/linux/chromedriver");
+        System.setProperty("webdriver.chrome.driver", "/var/lib/jenkins/workspace/Autotests-DEMO/addressbook-web-tests/src/test/drivers/linux/chromedriver");
         if (browser == BrowserType.CHROME) {
             wd = new ChromeDriver(chromeOptions);
         } else if (browser == BrowserType.FIREFOX) {
