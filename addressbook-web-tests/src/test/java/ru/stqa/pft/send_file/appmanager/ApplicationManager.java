@@ -2,7 +2,6 @@ package ru.stqa.pft.send_file.appmanager;
 
 import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.remote.BrowserType;
@@ -29,11 +28,9 @@ public class ApplicationManager {
     }
 
     public void init() {
-        ChromeOptions chromeOptions= new ChromeOptions();
-        chromeOptions.setBinary("/var/lib/jenkins/workspace/Autotests-DEMO/addressbook-web-tests/src/test/drivers/chromedriver.exe");
-        //System.setProperty("webdriver.chrome.driver", "/var/lib/jenkins/workspace/Autotests-DEMO/addressbook-web-tests/src/test/drivers/chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver", "/var/lib/jenkins/workspace/Autotests-DEMO/addressbook-web-tests/src/test/drivers/linux/chromedriver");
         if (browser == BrowserType.CHROME) {
-            wd = new ChromeDriver(chromeOptions);
+            wd = new ChromeDriver();
         } else if (browser == BrowserType.FIREFOX) {
             wd = new FirefoxDriver();
         } else if (browser == BrowserType.IEXPLORE) {
