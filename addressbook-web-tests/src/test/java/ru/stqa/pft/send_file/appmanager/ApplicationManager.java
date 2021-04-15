@@ -30,10 +30,14 @@ public class ApplicationManager {
 
     public void init() {
         ChromeOptions chromeOptions= new ChromeOptions();
-        chromeOptions.setBinary("/var/lib/jenkins/workspace/Autotests-DEMO/addressbook-web-tests/src/test/drivers/chromedriver.exe");
-        System.setProperty("webdriver.chrome.driver", "/var/lib/jenkins/workspace/Autotests-DEMO/addressbook-web-tests/src/test/drivers/chromedriver.exe");
+        chromeOptions.addArguments("--headless");
+        chromeOptions.setBinary("/var/lib/jenkins/workspace/Autotests-DEMO/addressbook-web-tests/src/test/drivers/linux/chromedriver");
+        System.setProperty("webdriver.chrome.driver", "/var/lib/jenkins/workspace/Autotests-DEMO/addressbook-web-tests/src/test/drivers/linux/chromedriver");
+        ChromeDriver driver = new ChromeDriver(chromeOptions);
+
+        //System.setProperty("webdriver.chrome.driver", "src/test/drivers/chromedriver.exe");
         if (browser == BrowserType.CHROME) {
-            wd = new ChromeDriver(chromeOptions);
+            wd = new ChromeDriver();
         } else if (browser == BrowserType.FIREFOX) {
             wd = new FirefoxDriver();
         } else if (browser == BrowserType.IEXPLORE) {

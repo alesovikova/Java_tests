@@ -180,6 +180,13 @@ public class SendFile_page {
         wd.findElement(Locators.field_message).sendKeys(message);
     }
 
+    public void fill_in_send_by_request_form(String subject, String message) {
+        wd.findElement(Locators.field_subject).clear();
+        wd.findElement(Locators.field_subject).sendKeys(subject);
+        wd.findElement(Locators.field_message).clear();
+        wd.findElement(Locators.field_message).sendKeys(message);
+    }
+
     public void click_send_button() {
         wd.findElement(Locators.send_button).click();
     }
