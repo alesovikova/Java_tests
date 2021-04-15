@@ -30,8 +30,9 @@ public class ApplicationManager {
 
     public void init() {
         ChromeOptions chromeOptions= new ChromeOptions();
-        chromeOptions.addArguments("--headless");
         chromeOptions.addArguments("--no-sandbox");
+        chromeOptions.addArguments("--headless");
+        chromeOptions.setExperimentalOption("useAutomationExtension", false);
         chromeOptions.addArguments("--disable-dev-shm-usage");
         chromeOptions.setBinary("/var/lib/jenkins/workspace/Autotests-DEMO/addressbook-web-tests/src/test/drivers/linux/chromedriver");
         System.setProperty("webdriver.chrome.driver", "/var/lib/jenkins/workspace/Autotests-DEMO/addressbook-web-tests/src/test/drivers/linux/chromedriver");
