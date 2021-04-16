@@ -29,9 +29,11 @@ public class ApplicationManager {
     }
 
     public void init() {
-        System.setProperty("webdriver.chrome.driver", "/var/lib/jenkins/workspace/Autotests-DEMO/addressbook-web-tests/src/test/drivers/linux/chromedriver");
 
         ChromeOptions chromeOptions= new ChromeOptions();
+        chromeOptions.setBinary("/var/lib/jenkins/workspace/Autotests-DEMO/addressbook-web-tests/src/test/drivers/linux/chromedriver");
+        System.setProperty("webdriver.chrome.driver", "/var/lib/jenkins/workspace/Autotests-DEMO/addressbook-web-tests/src/test/drivers/linux/chromedriver");
+
         chromeOptions.addArguments("--no-sandbox");
         chromeOptions.addArguments("--headless");
         chromeOptions.setExperimentalOption("useAutomationExtension", false);
@@ -41,7 +43,6 @@ public class ApplicationManager {
         chromeOptions.addArguments("--disable-gpu"); // applicable to windows os only
         chromeOptions.addArguments("--disable-dev-shm-usage"); // overcome limited resource problems
 
-        //chromeOptions.setBinary("/var/lib/jenkins/workspace/Autotests-DEMO/addressbook-web-tests/src/test/drivers/linux/chromedriver");
 
         //System.setProperty("webdriver.chrome.driver", "src/test/drivers/chromedriver.exe");
         if (browser == BrowserType.CHROME) {
