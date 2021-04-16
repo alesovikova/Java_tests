@@ -29,13 +29,19 @@ public class ApplicationManager {
     }
 
     public void init() {
+        System.setProperty("webdriver.chrome.driver", "/var/lib/jenkins/workspace/Autotests-DEMO/addressbook-web-tests/src/test/drivers/linux/chromedriver");
+
         ChromeOptions chromeOptions= new ChromeOptions();
         chromeOptions.addArguments("--no-sandbox");
         chromeOptions.addArguments("--headless");
         chromeOptions.setExperimentalOption("useAutomationExtension", false);
-        chromeOptions.addArguments("--disable-dev-shm-usage");
-        chromeOptions.setBinary("/var/lib/jenkins/workspace/Autotests-DEMO/addressbook-web-tests/src/test/drivers/linux/chromedriver");
-        System.setProperty("webdriver.chrome.driver", "/var/lib/jenkins/workspace/Autotests-DEMO/addressbook-web-tests/src/test/drivers/linux/chromedriver");
+        chromeOptions.addArguments("start-maximized"); // open Browser in maximized mode
+        chromeOptions.addArguments("disable-infobars"); // disabling infobars
+        chromeOptions.addArguments("--disable-extensions"); // disabling extensions
+        chromeOptions.addArguments("--disable-gpu"); // applicable to windows os only
+        chromeOptions.addArguments("--disable-dev-shm-usage"); // overcome limited resource problems
+
+        //chromeOptions.setBinary("/var/lib/jenkins/workspace/Autotests-DEMO/addressbook-web-tests/src/test/drivers/linux/chromedriver");
 
         //System.setProperty("webdriver.chrome.driver", "src/test/drivers/chromedriver.exe");
         if (browser == BrowserType.CHROME) {
